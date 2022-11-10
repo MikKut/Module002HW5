@@ -16,7 +16,7 @@ namespace Logger
         /// </summary>
         static FileService()
         {
-            PathToTheLogs = Path.GetFullPath(Directory.GetCurrentDirectory() + ConfigService.GetLogDirectoryName());
+            PathToTheLogs = Path.GetFullPath(Directory.GetCurrentDirectory() + "\\" + ConfigService.GetLogDirectoryName());
             if (!Directory.Exists(PathToTheLogs))
             {
                 Directory.CreateDirectory(PathToTheLogs);
